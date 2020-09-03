@@ -1,6 +1,7 @@
 const config = require('./webpack.config');
 const mix = require('laravel-mix');
 require('laravel-mix-eslint');
+mix.browserSync("http://127.0.0.1:8000");
 
 function resolve(dir) {
   return path.join(

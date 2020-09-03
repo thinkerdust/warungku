@@ -7,7 +7,7 @@
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            New Visits
+            Pengunjung
           </div>
           <count-to :start-val="0" :end-val="102400" :duration="2600" class="card-panel-num" />
         </div>
@@ -20,7 +20,7 @@
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            Messages
+            Pesan Masuk
           </div>
           <count-to :start-val="0" :end-val="81212" :duration="3000" class="card-panel-num" />
         </div>
@@ -29,11 +29,11 @@
     <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
       <div class="card-panel" @click="handleSetLineChartData('purchases')">
         <div class="card-panel-icon-wrapper icon-money">
-          <svg-icon icon-class="money" class-name="card-panel-icon" />
+          <svg-icon icon-class="dollar" class-name="card-panel-icon" />
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            Purchases
+            Total Laba
           </div>
           <count-to :start-val="0" :end-val="9280" :duration="3200" class="card-panel-num" />
         </div>
@@ -46,9 +46,35 @@
         </div>
         <div class="card-panel-description">
           <div class="card-panel-text">
-            Shoppings
+            Pesanan Baru
           </div>
           <count-to :start-val="0" :end-val="13600" :duration="3600" class="card-panel-num" />
+        </div>
+      </div>
+    </el-col>
+    <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
+      <div class="card-panel" @click="handleSetLineChartData('sold')">
+        <div class="card-panel-icon-wrapper icon-sold">
+          <i class="el-icon-sold-out card-panel-icon" />
+        </div>
+        <div class="card-panel-description">
+          <div class="card-panel-text">
+            Produk Terjual
+          </div>
+          <count-to :start-val="0" :end-val="99000" :duration="3600" class="card-panel-num" />
+        </div>
+      </div>
+    </el-col>
+    <el-col :xs="12" :sm="12" :lg="6" class="card-panel-col">
+      <div class="card-panel" @click="handleSetLineChartData('complain')">
+        <div class="card-panel-icon-wrapper icon-complain">
+          <i class="el-icon-service card-panel-icon" />
+        </div>
+        <div class="card-panel-description">
+          <div class="card-panel-text">
+            Komplain
+          </div>
+          <count-to :start-val="0" :end-val="23" :duration="3600" class="card-panel-num" />
         </div>
       </div>
     </el-col>
@@ -102,6 +128,12 @@ export default {
       .icon-shopping {
         background: #34bfa3
       }
+      .icon-sold {
+        background: #ffff00;
+      }
+      .icon-complain {
+        background: #804000;
+      }
     }
     .icon-people {
       color: #40c9c6;
@@ -114,6 +146,12 @@ export default {
     }
     .icon-shopping {
       color: #34bfa3
+    }
+    .icon-sold {
+      color: #ffff00;
+    }
+    .icon-complain {
+      color: #804000;
     }
     .card-panel-icon-wrapper {
       float: left;
