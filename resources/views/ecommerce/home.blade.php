@@ -33,7 +33,7 @@
 <!-- Contents -->
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-10">
             <div class="section-title">
                 <h1>Produk Terlaris</h1>
             </div>
@@ -97,39 +97,4 @@
     </div>
 </div> 
  <!--End Contents  -->
-
- <!-- Login Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h4 class="modal-title" id="exampleModalLabel">LOGIN</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body login-form">
-            <form>
-                <div class="avatar">
-                    <i class="fa fa-user"></i>
-                </div>
-                <div class="form-group">
-                    <label for="recipient-name" class="col-form-label">Email Address : </label>
-                    <input type="text" class="form-control" id="recipient-name">
-                </div>
-                <div class="form-group">
-                    <label for="message-text" class="col-form-label">Password : </label>
-                    <input type="password" class="form-control" id="recipient-name">
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Log In</button>
-            <h5> OR </h5>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Register</button>
-        </div>
-        </div>
-    </div>
-</div>
- <!-- End Login Modal -->
 @endsection

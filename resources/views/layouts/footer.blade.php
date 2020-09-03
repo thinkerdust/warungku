@@ -27,7 +27,7 @@
             <div class="col-lg-3 col-md-6 footer-links">
                 <h4>Layanan Pelanggan</h4>
                 <ul>
-                <li><i class="bx bx-chevron-right"></i> <a href="#">Cara Berbelanja</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="{{ route('howtobuy') }}">Cara Berbelanja</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">Info Pembayaran</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">Info Pengiriman</a></li>
                 <li><i class="bx bx-chevron-right"></i> <a href="#">Garansi Produk</a></li>
